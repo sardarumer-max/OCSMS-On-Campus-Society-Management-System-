@@ -38,11 +38,12 @@ public final class UITheme {
     public static final Color TABLE_HDR = C3;
 
     // ── Fonts ───────────────────────────────────────────────────────────────────
-    public static final Font FONT_TITLE   = new Font("Segoe UI", Font.BOLD,  22);
-    public static final Font FONT_HEADING = new Font("Segoe UI", Font.BOLD,  16);
-    public static final Font FONT_BODY    = new Font("Segoe UI", Font.PLAIN, 13);
-    public static final Font FONT_BOLD    = new Font("Segoe UI", Font.BOLD,  13);
-    public static final Font FONT_SMALL   = new Font("Segoe UI", Font.PLAIN, 11);
+    // Cross-platform fonts: SansSerif works on Windows, macOS, and Linux
+    public static final Font FONT_TITLE   = new Font("SansSerif", Font.BOLD,  22);
+    public static final Font FONT_HEADING = new Font("SansSerif", Font.BOLD,  16);
+    public static final Font FONT_BODY    = new Font("SansSerif", Font.PLAIN, 13);
+    public static final Font FONT_BOLD    = new Font("SansSerif", Font.BOLD,  13);
+    public static final Font FONT_SMALL   = new Font("SansSerif", Font.PLAIN, 11);
 
     // ── Border Helpers ──────────────────────────────────────────────────────────
     public static Border cardBorder() {
@@ -338,7 +339,7 @@ public final class UITheme {
                 new EmptyBorder(16, 20, 16, 20)));
 
         JLabel valLbl = new JLabel(value, SwingConstants.CENTER);
-        valLbl.setFont(new Font("Segoe UI", Font.BOLD, 26));
+        valLbl.setFont(new Font("SansSerif", Font.BOLD, 26));
         valLbl.setForeground(valueColor);
 
         JLabel titleLbl = new JLabel(title, SwingConstants.CENTER);

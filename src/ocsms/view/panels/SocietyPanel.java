@@ -87,7 +87,7 @@ public class SocietyPanel extends JPanel {
         card.setMaximumSize(new Dimension(Integer.MAX_VALUE, 180));
 
         JLabel icon = new JLabel("[" + (society.getCategory() != null ? society.getCategory().name().charAt(0) : "S") + "]");
-        icon.setFont(new Font("Segoe UI", Font.BOLD, 32));
+        icon.setFont(new Font("SansSerif", Font.BOLD, 32));
         icon.setForeground(UITheme.ACCENT);
         icon.setBorder(new EmptyBorder(10, 20, 10, 20));
         card.add(icon, BorderLayout.WEST);

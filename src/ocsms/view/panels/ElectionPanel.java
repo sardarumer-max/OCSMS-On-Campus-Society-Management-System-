@@ -45,7 +45,7 @@ public class ElectionPanel extends JPanel {
         header.setBorder(new EmptyBorder(24, 28, 12, 28));
 
         JLabel heading = UITheme.heading("Elections & Voting");
-        heading.setFont(new Font("Segoe UI", Font.BOLD, 20));
+        heading.setFont(new Font("SansSerif", Font.BOLD, 20));
         header.add(heading, BorderLayout.WEST);
 
         // Create Election button for admins
@@ -127,7 +127,7 @@ public class ElectionPanel extends JPanel {
         topRow.setBackground(UITheme.BG_CARD);
 
         JLabel titleLbl = new JLabel("Election: " + election.getPosition() + "  —  " + socName);
-        titleLbl.setFont(new Font("Segoe UI", Font.BOLD, 16));
+        titleLbl.setFont(new Font("SansSerif", Font.BOLD, 16));
         titleLbl.setForeground(UITheme.ACCENT);
 
         JLabel phasePill = new JLabel("  " + election.getPhase().name() + "  ");
@@ -377,7 +377,7 @@ public class ElectionPanel extends JPanel {
         JLabel winnerLbl = new JLabel(winner != null
                 ? "WINNER: " + winner.getName() + " (" + winner.getRollNumber() + ")  —  " + election.getVoteCount(winnerId) + " votes"
                 : "No votes cast — no winner declared.");
-        winnerLbl.setFont(new Font("Segoe UI", Font.BOLD, 15));
+        winnerLbl.setFont(new Font("SansSerif", Font.BOLD, 15));
         winnerLbl.setForeground(UITheme.SUCCESS);
         winnerLbl.setBorder(new EmptyBorder(4, 0, 8, 0));
         winnerLbl.setAlignmentX(LEFT_ALIGNMENT);

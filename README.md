@@ -10,14 +10,30 @@
 - Java JDK 11 or higher
 - `lib/gson-2.10.1.jar` (included in project)
 
-### Run (Easiest Way)
+### Windows
 Simply double-click `run.bat` in the project root folder.
 
-### Manual Compile & Run
+### macOS / Linux
+```bash
+chmod +x run.sh  # One-time setup
+./run.sh
 ```
+
+For detailed macOS setup, see [MACOS_SETUP.md](MACOS_SETUP.md)
+
+### Manual Compile & Run (All Platforms)
+**Windows:**
+```batch
 cd src
 javac -encoding UTF-8 -cp ".;..\lib\gson-2.10.1.jar" ocsms\Main.java
 java -cp ".;..\lib\gson-2.10.1.jar" ocsms.Main
+```
+
+**macOS/Linux:**
+```bash
+cd src
+javac -encoding UTF-8 -cp ".:../lib/gson-2.10.1.jar" ocsms/Main.java
+java -cp ".:../lib/gson-2.10.1.jar" ocsms.Main
 ```
 
 ---

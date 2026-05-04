@@ -93,7 +93,7 @@ public class MainFrame extends JFrame implements NotificationListener {
         headerRow.setBackground(UITheme.SIDEBAR);
         
         JLabel appName = new JLabel("OCSMS");
-        appName.setFont(new Font("Segoe UI", Font.BOLD, 15));
+        appName.setFont(new Font("SansSerif", Font.BOLD, 15));
         appName.setForeground(UITheme.ACCENT);
         headerRow.add(appName, BorderLayout.WEST);
 
@@ -115,7 +115,7 @@ public class MainFrame extends JFrame implements NotificationListener {
                     g2.setColor(UITheme.DANGER);
                     g2.fillOval(getWidth() - 14, 2, 13, 13);
                     g2.setColor(Color.WHITE);
-                    g2.setFont(new Font("Segoe UI", Font.BOLD, 9));
+                    g2.setFont(new Font("SansSerif", Font.BOLD, 9));
                     String badge = unreadCount > 9 ? "9+" : String.valueOf(unreadCount);
                     FontMetrics fm = g2.getFontMetrics();
                     g2.drawString(badge, getWidth() - 14 + (13 - fm.stringWidth(badge)) / 2,
