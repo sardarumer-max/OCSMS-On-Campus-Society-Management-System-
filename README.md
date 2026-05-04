@@ -15,8 +15,8 @@ Simply double-click `run.bat` in the project root folder.
 
 ### macOS / Linux
 ```bash
-chmod +x run.sh  # One-time setup
-./run.sh
+chmod +x run-macos.sh  # One-time setup
+./run-macos.sh
 ```
 
 For detailed macOS setup, see [MACOS_SETUP.md](MACOS_SETUP.md)
